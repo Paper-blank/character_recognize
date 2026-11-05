@@ -1,0 +1,187 @@
+{
+  "baseline": {
+    "dataset": "KMNIST",
+    "model": "baseline",
+    "seed": 2026,
+    "device": "cuda",
+    "epochs": 10,
+    "best_epoch": 10,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "training_config": {
+      "augmentation": false,
+      "label_smoothing": 0.0,
+      "optimizer": "Adam",
+      "scheduler": null,
+      "validation_size_requested": 6000,
+      "normalization_source": "official_60000_image_training_split"
+    },
+    "train_samples": 54000,
+    "validation_samples": 6000,
+    "test_samples": 10000,
+    "parameter_count": 101770,
+    "training_seconds": 12.598046796047129,
+    "best_validation_accuracy": 0.954,
+    "test_loss": 0.4416098997116089,
+    "test_accuracy": 0.8892,
+    "test_macro_f1": 0.8891829873430478,
+    "per_class": {
+      "o": {
+        "precision": 0.9214285714285714,
+        "recall": 0.903,
+        "f1-score": 0.9121212121212121,
+        "support": 1000
+      },
+      "ki": {
+        "precision": 0.8724035608308606,
+        "recall": 0.882,
+        "f1-score": 0.8771755345599205,
+        "support": 1000
+      },
+      "su": {
+        "precision": 0.8197845249755142,
+        "recall": 0.837,
+        "f1-score": 0.8283028203859476,
+        "support": 1000
+      },
+      "tsu": {
+        "precision": 0.8861940298507462,
+        "recall": 0.95,
+        "f1-score": 0.916988416988417,
+        "support": 1000
+      },
+      "na": {
+        "precision": 0.906047516198704,
+        "recall": 0.839,
+        "f1-score": 0.8712357217030114,
+        "support": 1000
+      },
+      "ha": {
+        "precision": 0.9007164790174002,
+        "recall": 0.88,
+        "f1-score": 0.8902377339403136,
+        "support": 1000
+      },
+      "ma": {
+        "precision": 0.862708719851577,
+        "recall": 0.93,
+        "f1-score": 0.8950914340712224,
+        "support": 1000
+      },
+      "ya": {
+        "precision": 0.9381003201707577,
+        "recall": 0.879,
+        "f1-score": 0.907589055240062,
+        "support": 1000
+      },
+      "re": {
+        "precision": 0.875602700096432,
+        "recall": 0.908,
+        "f1-score": 0.8915071183112421,
+        "support": 1000
+      },
+      "wo": {
+        "precision": 0.9198751300728408,
+        "recall": 0.884,
+        "f1-score": 0.901580826109128,
+        "support": 1000
+      }
+    }
+  },
+  "improved": {
+    "dataset": "KMNIST",
+    "model": "improved",
+    "seed": 2026,
+    "device": "cuda",
+    "epochs": 10,
+    "best_epoch": 9,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "training_config": {
+      "augmentation": true,
+      "label_smoothing": 0.05,
+      "optimizer": "AdamW",
+      "scheduler": "CosineAnnealingLR",
+      "validation_size_requested": 6000,
+      "normalization_source": "official_60000_image_training_split"
+    },
+    "train_samples": 54000,
+    "validation_samples": 6000,
+    "test_samples": 10000,
+    "parameter_count": 468010,
+    "training_seconds": 17.353668535943143,
+    "best_validation_accuracy": 0.9908333333333333,
+    "test_loss": 0.417399250459671,
+    "test_accuracy": 0.9672,
+    "test_macro_f1": 0.9671227743768241,
+    "per_class": {
+      "o": {
+        "precision": 0.9739217652958877,
+        "recall": 0.971,
+        "f1-score": 0.972458688032048,
+        "support": 1000
+      },
+      "ki": {
+        "precision": 0.9895506792058516,
+        "recall": 0.947,
+        "f1-score": 0.9678078691875319,
+        "support": 1000
+      },
+      "su": {
+        "precision": 0.9687162891046386,
+        "recall": 0.898,
+        "f1-score": 0.9320186818889465,
+        "support": 1000
+      },
+      "tsu": {
+        "precision": 0.9244402985074627,
+        "recall": 0.991,
+        "f1-score": 0.9565637065637066,
+        "support": 1000
+      },
+      "na": {
+        "precision": 0.9558232931726908,
+        "recall": 0.952,
+        "f1-score": 0.9539078156312625,
+        "support": 1000
+      },
+      "ha": {
+        "precision": 0.9887063655030801,
+        "recall": 0.963,
+        "f1-score": 0.9756838905775076,
+        "support": 1000
+      },
+      "ma": {
+        "precision": 0.9357884796978282,
+        "recall": 0.991,
+        "f1-score": 0.9626032054395337,
+        "support": 1000
+      },
+      "ya": {
+        "precision": 0.984984984984985,
+        "recall": 0.984,
+        "f1-score": 0.9844922461230615,
+        "support": 1000
+      },
+      "re": {
+        "precision": 0.9696969696969697,
+        "recall": 0.992,
+        "f1-score": 0.9807217004448838,
+        "support": 1000
+      },
+      "wo": {
+        "precision": 0.9869477911646586,
+        "recall": 0.983,
+        "f1-score": 0.9849699398797596,
+        "support": 1000
+      }
+    }
+  },
+  "changes": {
+    "accuracy_points": 7.799999999999995,
+    "macro_f1_points": 7.793978703377635,
+    "relative_error_reduction": 0.7039711191335736,
+    "additional_parameters": 366240,
+    "additional_training_seconds": 4.755621739896014
+  }
+}
